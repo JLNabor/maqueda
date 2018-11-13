@@ -1,0 +1,50 @@
+.main-item-bestday{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top:30px;
+
+    /deep/p{
+        text-align: justify;;
+    }
+    /deep/.btn-primary {
+        background-color: #F65275 !important;
+    }
+
+    /deep/.card-img-top{
+        height: 250px;
+    }
+
+    .maq-title{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        background: #003594;
+        height: 60px;
+        padding-left: 4%;
+        align-items: center;   
+        
+        .maq-magin{
+            justify-content: flex-end;
+        }
+
+        .item-maq{
+            width: 50%;
+            display: flex;
+            height: 100%;
+            align-items: center; 
+        }
+    }
+
+    .maq-info{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+
+        .maq-card{
+            margin-top: 10px;
+            margin-left: 2%;
+            width: 31%;
+        }
+    }
+}

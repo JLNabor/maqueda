@@ -1,0 +1,42 @@
+<div class="main-contact">
+
+  <div class="map">
+      <div class="map-title">
+        <span class="weight-bold size-20">Visítanos</span>
+          
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+        <iframe width="600" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=Calle%20Dr.%20Enrique%20C.%20Livas%20212%2C%20Vista%20Hermosa%2C%2064620%20Monterrey%2C%20N.L.%2C%20Mexico&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+        </div>
+      </div>
+
+  </div>
+  <div class="contact">
+    <!-- Default form contact -->
+    <form id="myform" onsubmit="emailjs.sendForm('default_service', 'template_N5VvDIqA', this); cleanForm(); return false;" method="post" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Contáctanos</p>
+
+        <input type="hidden" id="reply_to" name="reply_to" value="maqueda.jorgeivan@gmail.com" />
+
+        <!-- Name -->
+        <input type="text" id="from_name" name="from_name" class="form-control mb-4" placeholder="Nombre">
+
+        <!-- Email -->
+        <input type="email" id="to_name" name="to_name"  class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Message -->
+        <div class="form-group">
+            <textarea id="message_html" name="message_html"  class="form-control rounded-0" rows="3" placeholder="Mensaje"></textarea>
+        </div>
+
+        <!-- Send button -->
+        <button class="btn btn-info btn-block">Enviar</button>
+
+    </form>
+    <!-- Default form contact -->
+  </div>
+
+</div>

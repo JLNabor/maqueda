@@ -1,0 +1,78 @@
+@import "_fonts";
+
+.main-search-box{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+    
+    .div-liquid-box{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+
+        .maq-width{
+            width: 100%;
+
+        }
+
+
+        /deep/.bdts-liquidbox{
+            max-width: 100%!important;
+        }
+           
+    }
+
+    .maq-promo{
+        width: 100%;        
+        display: flex;
+        flex-flow: row;
+        top: 20px;
+
+        .carousel-banner{
+            display: flex;
+            width: 40%;         
+            .banner-img{
+                height: 400px;
+                width: 100%;
+            }
+        }
+
+        .carousel-promo{
+            display: flex;
+            width: 60%; 
+            .promo-img{
+                height: 400px;
+                width: 100%;
+            }
+            .infoPromo {
+                margin-top: 4%;
+                width: 34%;
+                height: 73%;
+                position: absolute;
+                color: #fff;
+                text-transform: uppercase;
+                background-color: rgba(255, 255, 255, 0.49);
+                padding-top: 4%;
+                left: 50%;
+                top: 0%;
+                padding-left: 7%;
+                padding-right: 4%;
+            }        
+            .promo-button{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                color: #fff;
+                background-color: #F65275;
+                padding: 3px 14px;
+                font-size: 20px;
+                font-family: 'Oswald', sans-serif;
+                text-decoration: none;
+            }
+        }
+    }    
+        
+
+
+}

@@ -1,0 +1,34 @@
+<div class="main-item-bestday">
+
+  <div class="maq-title">
+    <div class="item-maq weight-bold size-20 color-DCDBDB">
+        {{titleItem}}
+    </div>  
+    <div class="item-maq  maq-magin weight-bold size-20 color-DCDBDB">
+        <a class="color-DCDBDB weight-bold size-22  nav-link" href="#maqMenu">Inicio</a>
+    </div>
+  </div>
+
+  <div class="maq-info">
+  <!-- Card -->
+    <div class="card maq-card" *ngFor="let item of items">
+
+      <!-- Card image -->
+      <img class="card-img-top" src="../../../assets/img/etravel/{{item.imgName}}">
+
+      <!-- Card content -->
+      <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title"><a>{{item.Name}}</a></h4>
+        <!-- Text -->
+        <p class="card-text">{{item.Description}}</p>
+        <!-- Button -->
+        <a href="{{item.urlEtravel}}" class="btn btn-primary">Reservar</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+  </div>
+</div>

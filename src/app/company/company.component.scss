@@ -1,0 +1,39 @@
+.main-company{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top:30px;
+
+    .maq-title{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        background: #003594;
+        height: 60px;
+        padding-left: 4%;
+        align-items: center;   
+        margin-bottom: 15px;
+        
+        @media only screen and (max-width: 1000px) {
+            background:  #D82949;
+        }
+        
+        .maq-magin{
+            justify-content: flex-end;
+        }
+
+        .item-maq{
+            width: 50%;
+            display: flex;
+            height: 100%;
+            align-items: center; 
+        }
+    }
+
+    .maq-text{
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: justify;
+    }
+
+}

@@ -1,0 +1,15 @@
+<div *ngIf="!isMobile">
+    <app-header></app-header>
+    <app-search-box></app-search-box>
+    <app-bestday></app-bestday>
+    <app-company></app-company>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</div>
+
+<div *ngIf="isMobile">
+    <app-header-mobile></app-header-mobile>
+    <app-search-mobile></app-search-mobile>
+    <app-company [isMobile]="isMobile"></app-company>
+    <app-footer-mobile></app-footer-mobile>
+</div>

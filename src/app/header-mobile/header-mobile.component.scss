@@ -1,0 +1,72 @@
+.main-header-mobile{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+    
+    .icon-size {
+        width: 34px;
+        height: 34px;
+        padding-right: 5px;
+     }
+
+     .red-size {
+        width: 35px;
+        height: 30px;
+        padding-right: 5px;
+     }
+
+    /deep/.btn-fb{
+        background-color: #3b5998!important;
+        color: #fff!important;
+        width: 8%;
+    }
+
+    /deep/.btn-ins{
+        background-color: #2e5e86!important;
+        color: #fff!important;
+        width: 8%;
+    }
+
+    .main-image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .image-size{
+            width: 35%;
+            height: 15%;
+        }
+    }
+
+    .maq-info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+
+        .maq-margin{
+            margin-left: 10px;
+        }
+
+        .maq-face{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .maq-insta{
+            margin-top: 5px;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+    }
+
+}

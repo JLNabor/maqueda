@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaquedaTours</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://maquedatours.com/assets/img/icons/avion.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128579185-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128579185-1');
+    </script>
+</head>
+<body class="main-body">
+  <app-root></app-root>
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '523346908131936',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="243453296406881"
+  theme_color="#fa3c4c"
+  logged_in_greeting="Hola Viajero! como podemos ayudarte?"
+  logged_out_greeting="Hola Viajero! como podemos ayudarte?">
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+(function(a){if(typeof define==='function'&&define.amd){define(['jquery'],a)}else{a(jQuery)}}(function($){if($.support.cors||!$.ajaxTransport||!window.XDomainRequest){return}var n=/^https?:\/\//i;var o=/^get|post$/i;var p=new RegExp('^'+location.protocol,'i');$.ajaxTransport('* text html xml json',function(j,k,l){if(!j.crossDomain||!j.async||!o.test(j.type)||!n.test(j.url)||!p.test(j.url)){return}var m=null;return{send:function(f,g){var h='';var i=(k.dataType||'').toLowerCase();m=new XDomainRequest();if(/^\d+$/.test(k.timeout)){m.timeout=k.timeout}m.ontimeout=function(){g(500,'timeout')};m.onload=function(){var a='Content-Length: '+m.responseText.length+'\r\nContent-Type: '+m.contentType;var b={code:200,message:'success'};var c={text:m.responseText};try{if(i==='html'||/text\/html/i.test(m.contentType)){c.html=m.responseText}else if(i==='json'||(i!=='text'&&/\/json/i.test(m.contentType))){try{c.json=$.parseJSON(m.responseText)}catch(e){b.code=500;b.message='parseerror'}}else if(i==='xml'||(i!=='text'&&/\/xml/i.test(m.contentType))){var d=new ActiveXObject('Microsoft.XMLDOM');d.async=false;try{d.loadXML(m.responseText)}catch(e){d=undefined}if(!d||!d.documentElement||d.getElementsByTagName('parsererror').length){b.code=500;b.message='parseerror';throw'Invalid XML: '+m.responseText;}c.xml=d}}catch(parseMessage){throw parseMessage;}finally{g(b.code,b.message,c,a)}};m.onprogress=function(){};m.onerror=function(){g(500,'error',{text:m.responseText})};if(k.data){h=($.type(k.data)==='string')?k.data:$.param(k.data)}m.open(j.type,j.url);m.send(h)},abort:function(){if(m){m.abort()}}}})}));
+    
+    jQuery.ajax({
+        type: "post",
+        url: "//www.e-tsw.com/Search/Box?af=AF-TWGV&ln=&cu=",
+        success: function (data) {
+            jQuery("#liquidBoxContainer").html(data);
+        }
+    });
+
+        jQuery.ajax({
+        type: "post",
+        url: "//www.e-tsw.com/Search/Box?af=AF-TWMN&ln=&cu=",
+        success: function (data) {
+            jQuery("#liquidBoxContainerM").html(data);
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_aXA2hXvmTGOJXwnl6zxqk");
+   })();
+</script>
+
+<script>
+
+  
+function cleanForm(){
+  document.getElementById("message_html").value = "";
+    document.getElementById("from_name").value = "";
+    document.getElementById("to_name").value = "";
+}
+
+</script>
+</body>
+</html>

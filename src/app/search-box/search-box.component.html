@@ -1,0 +1,33 @@
+<div class="main-search-box">
+    
+    <div id="carouselExampleControls" class="maq-promo carousel slide" data-ride="carousel">
+        <div class="carousel-inner">     
+          <div class="carousel-item" [ngClass]="{'active': i == 0}" *ngFor="let item of promo let i = index"> 
+            <div class="carousel-banner">
+              <img class="d-block w-100 banner-img" src="../../assets/img/banners/BANNER-OUH-336x280.png" >   
+            </div>  
+            <div class="carousel-promo"> 
+              <img class="d-block w-100 promo-img" src="../../assets/img/promo/{{item.imgName}}" >
+                <div class="infoPromo">
+                  <h1 class="family-montserrat weight-bold color-black">{{item.Name}}</h1>
+                  <span class="family-montserrat weight-bold size-30 color-black">{{item.Description}}</span> 
+                  <a class="promo-button" target="_blank" rel="noopener noreferrer" href="{{item.urlEtravel}}">Reservar </a>        
+                </div>
+              </div> 
+          </div>
+        </div>
+    
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>  
+      
+      <div class="div-liquid-box"> 
+          <div id="liquidBoxContainer" class="maq-width"></div>
+      </div>
+    </div>
