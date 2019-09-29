@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 8
+    commands:
+      - npm install -g @angular/cli@6.0.0
+  build:
+    commands:
+      - ng build --configuration=$BUILD_ENV --build-optimizer
+  post_build:
+    commands:
+      - aws s3 sync dist/ s3://$BUCKET_NAME --delete
