@@ -11,4 +11,4 @@ phases:
       - ng b --prod --aot=false --build-optimizer=false
   post_build:
     commands:
-      - aws s3 sync ./dist s3://jlnabors3
+      - aws s3 sync ./dist s3://jlnabors3/devbuild
