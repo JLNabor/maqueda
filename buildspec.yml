@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.1
 environment_variables:
     plaintext:
         S3_BUCKET: "hello-world.andrescastano.com"
@@ -17,6 +17,9 @@ phases:
          commands:
             - aws s3 cp dist s3://${S3_BUCKET} --recursive
             - echo Build completed on `date`
-      
-      
+artifacts:
+    files:
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes
       
