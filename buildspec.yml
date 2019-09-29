@@ -8,7 +8,7 @@ phases:
       - npm install -g @angular/cli@6.1.0
   build:
     commands:
-      - ng build --configuration=$BUILD_ENV --build-optimizer
+      - ng b --prod --aot=false --build-optimizer=false
   post_build:
     commands:
       - aws s3 sync dist/ s3://$BUCKET_NAME --delete
