@@ -9,6 +9,3 @@ phases:
   build:
     commands:
       - ng b --prod --aot=false --build-optimizer=false
-  post_build:
-    commands:
-      - aws s3 sync . s3://jlnabors3 --delete
